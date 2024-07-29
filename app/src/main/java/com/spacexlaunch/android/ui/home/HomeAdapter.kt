@@ -10,7 +10,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.spacexlaunch.android.data.XModel
 import com.spacexlaunch.android.databinding.ItemHomeBinding
 
-class HomeAdapter(private val listener: ShipListListener) :
+class HomeAdapter(private val listener: HomeListListener) :
     PagingDataAdapter<XModel, RecyclerView.ViewHolder>(Diff()) {
 
     private var context: Context? = null
@@ -68,7 +68,7 @@ class HomeAdapter(private val listener: ShipListListener) :
         }
     }
 
-    interface ShipListListener {
+    interface HomeListListener {
         fun onItemClick(item: Int?)
         fun onBookmarkClick(item: Int?, favorite: ImageView, item1: XModel?)
         fun isBookmark(item: Int?, favorite: ImageView)

@@ -1,4 +1,4 @@
-package com.spacexlaunch.android.dialogFragment.exit
+package com.spacexlaunch.android.dialogFragment
 
 import android.os.Bundle
 import android.view.*

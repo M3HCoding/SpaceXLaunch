@@ -50,7 +50,7 @@ class SearchFragment : Fragment() {
             requireActivity().supportFragmentManager.popBackStack()
         }
 
-        homeAdapter = HomeAdapter(object : HomeAdapter.ShipListListener {
+        homeAdapter = HomeAdapter(object : HomeAdapter.HomeListListener {
             override fun onItemClick(item: Int?) {
                 // Handle item click
             }

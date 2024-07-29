@@ -9,7 +9,7 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.spacexlaunch.android.R
 import com.spacexlaunch.android.databinding.ActivityMainBinding
-import com.spacexlaunch.android.dialogFragment.exit.ExitDialogFragment
+import com.spacexlaunch.android.dialogFragment.ExitDialogFragment
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -35,8 +35,6 @@ class MainActivity : AppCompatActivity() {
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
     }
-
-
 
     @Deprecated("Deprecated in Java")
     override fun onBackPressed() {

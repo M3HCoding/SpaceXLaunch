@@ -1,10 +1,13 @@
 package com.spacexlaunch.android.ui.home
 
+import android.graphics.drawable.Drawable
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
+import android.widget.Toast
+import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.Lifecycle
@@ -51,7 +54,7 @@ class HomeFragment : Fragment() {
     }
 
     private fun setupAdapter() {
-        homeAdapter = HomeAdapter(object : HomeAdapter.ShipListListener {
+        homeAdapter = HomeAdapter(object : HomeAdapter.HomeListListener {
             override fun onItemClick(item: Int?) {
                 navigateToDestination(item)
             }
@@ -73,7 +76,11 @@ class HomeFragment : Fragment() {
             withContext(Dispatchers.Main) {
                 if (checkBookmark != null) {
                     viewModel.deleteBookmark(checkBookmark)
+                    //favorite.setColorFilter(ContextCompat.getColor(requireContext(),R.color.color_red))
+                    val drawable: Drawable? =ContextCompat.getDrawable(requireContext(),R.drawable.selcted_bookmark_add_24)
+                    favorite.setImageDrawable(drawable)
                     favorite.isSelected = false
+                    Toast.makeText(requireContext(),"Removed from Favorites",Toast.LENGTH_SHORT).show()
                 } else {
                     item?.let {
                         val bookMarkModel = BookMarkModel(
@@ -103,7 +110,13 @@ class HomeFragment : Fragment() {
 
                         )
                         viewModel.insertBookmark(bookMarkModel)
+                        //favorite.setColorFilter(ContextCompat.getColor(requireContext(),R.color.color_ic_icon))
+
+                        val drawable: Drawable? =ContextCompat.getDrawable(requireContext(),R.drawable.baseline_bookmark_add_24)
+                        favorite.setImageDrawable(drawable)
+
                         favorite.isSelected = true
+                        Toast.makeText(requireContext(),"Added to Favorites",Toast.LENGTH_SHORT).show()
                     }
                 }
             }
@@ -114,7 +127,17 @@ class HomeFragment : Fragment() {
         lifecycleScope.launch(Dispatchers.IO) {
             val checkBookmark = item?.let { viewModel.getBookmark(it) }
             withContext(Dispatchers.Main) {
-                favorite.isSelected = checkBookmark != null
+                if (checkBookmark!=null){
+                   //favorite.setColorFilter(ContextCompat.getColor(requireContext(),R.color.color_red))
+                    val drawable: Drawable? =ContextCompat.getDrawable(requireContext(),R.drawable.selcted_bookmark_add_24)
+                    favorite.setImageDrawable(drawable)
+                    favorite.isSelected = true
+                }else {
+                    //favorite.setColorFilter(ContextCompat.getColor(requireContext(),R.color.color_ic_icon))
+                    val drawable: Drawable? =ContextCompat.getDrawable(requireContext(),R.drawable.baseline_bookmark_add_24)
+                    favorite.setImageDrawable(drawable)
+                    favorite.isSelected = false
+                }
             }
         }
     }
