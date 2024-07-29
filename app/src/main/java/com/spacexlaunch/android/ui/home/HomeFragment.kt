@@ -76,8 +76,7 @@ class HomeFragment : Fragment() {
             withContext(Dispatchers.Main) {
                 if (checkBookmark != null) {
                     viewModel.deleteBookmark(checkBookmark)
-                    //favorite.setColorFilter(ContextCompat.getColor(requireContext(),R.color.color_red))
-                    val drawable: Drawable? =ContextCompat.getDrawable(requireContext(),R.drawable.selcted_bookmark_add_24)
+                    val drawable: Drawable? =ContextCompat.getDrawable(requireContext(),R.drawable.baseline_bookmark_add_24)
                     favorite.setImageDrawable(drawable)
                     favorite.isSelected = false
                     Toast.makeText(requireContext(),"Removed from Favorites",Toast.LENGTH_SHORT).show()
@@ -110,9 +109,7 @@ class HomeFragment : Fragment() {
 
                         )
                         viewModel.insertBookmark(bookMarkModel)
-                        //favorite.setColorFilter(ContextCompat.getColor(requireContext(),R.color.color_ic_icon))
-
-                        val drawable: Drawable? =ContextCompat.getDrawable(requireContext(),R.drawable.baseline_bookmark_add_24)
+                        val drawable: Drawable? =ContextCompat.getDrawable(requireContext(),R.drawable.selcted_bookmark_add_24)
                         favorite.setImageDrawable(drawable)
 
                         favorite.isSelected = true
@@ -128,12 +125,10 @@ class HomeFragment : Fragment() {
             val checkBookmark = item?.let { viewModel.getBookmark(it) }
             withContext(Dispatchers.Main) {
                 if (checkBookmark!=null){
-                   //favorite.setColorFilter(ContextCompat.getColor(requireContext(),R.color.color_red))
                     val drawable: Drawable? =ContextCompat.getDrawable(requireContext(),R.drawable.selcted_bookmark_add_24)
                     favorite.setImageDrawable(drawable)
                     favorite.isSelected = true
                 }else {
-                    //favorite.setColorFilter(ContextCompat.getColor(requireContext(),R.color.color_ic_icon))
                     val drawable: Drawable? =ContextCompat.getDrawable(requireContext(),R.drawable.baseline_bookmark_add_24)
                     favorite.setImageDrawable(drawable)
                     favorite.isSelected = false
