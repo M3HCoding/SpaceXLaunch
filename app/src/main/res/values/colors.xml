@@ -7,4 +7,120 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="color_transparent">#00000000</color>
+    <color name="color_app_background">#FFFFFF</color>
+    <color name="color_white_text">#FFFFFF</color>
+    <color name="color_black_text_title">#000000</color>
+    <color name="color_text_description">#222222</color>
+    <color name="color_button">#FFFFFF</color>
+    <color name="color_divider_one">#616161</color>
+    <color name="color_divider_two">#D6D1D1</color>
+    <color name="color_gray">#808080</color>
+    <color name="color_rounded_background">#093042</color>
+    <color name="color_light_gray_background">#F0F0F0</color>
+    <color name="color_ic_icon">#FF000000</color>
+    <color name="color_ic_icon_tint">#A5A5A5</color>
+
+    <color name="color_text_one">#FF000000</color>
+    <color name="color_text_two">#FF333333</color>
+    <color name="color_text_three">#FF777777</color>
+    <color name="color_text_four">#FFAAAAAA</color>
+
+
+    <!-- Red Colors -->
+    <color name="color_red_light">#FFCDD2</color>
+    <color name="color_red">#F44336</color>
+    <color name="color_red_dark">#D32F2F</color>
+
+    <!-- Pink Colors -->
+    <color name="color_pink_light">#F8BBD0</color>
+    <color name="color_pink">#E91E63</color>
+    <color name="color_pink_dark">#C2185B</color>
+
+    <!-- Purple Colors -->
+    <color name="color_purple_light">#E1BEE7</color>
+    <color name="color_purple">#9C27B0</color>
+    <color name="color_purple_dark">#7B1FA2</color>
+
+    <!-- Deep Purple Colors -->
+    <color name="color_deep_purple_light">#D1C4E9</color>
+    <color name="color_deep_purple">#673AB7</color>
+    <color name="color_deep_purple_dark">#512DA8</color>
+
+    <!-- Indigo Colors -->
+    <color name="color_indigo_light">#C5CAE9</color>
+    <color name="color_indigo">#3F51B5</color>
+    <color name="color_indigo_dark">#303F9F</color>
+
+    <!-- Blue Colors -->
+    <color name="color_blue_light">#BBDEFB</color>
+    <color name="color_blue">#2196F3</color>
+    <color name="color_blue_dark">#1976D2</color>
+
+    <!-- Light Blue Colors -->
+    <color name="color_light_blue_light">#B3E5FC</color>
+    <color name="color_light_blue">#03A9F4</color>
+    <color name="color_light_blue_dark">#0288D1</color>
+
+    <!-- Cyan Colors -->
+    <color name="color_cyan_light">#B2EBF2</color>
+    <color name="color_cyan">#00BCD4</color>
+    <color name="color_cyan_dark">#0097A7</color>
+
+    <!-- Teal Colors -->
+    <color name="color_teal_light">#B2DFDB</color>
+    <color name="color_teal">#009688</color>
+    <color name="color_teal_dark">#00796B</color>
+
+    <!-- Green Colors -->
+    <color name="color_green_light">#C8E6C9</color>
+    <color name="color_green">#4CAF50</color>
+    <color name="color_green_dark">#388E3C</color>
+
+    <!-- Light Green Colors -->
+    <color name="color_light_green_light">#DCEDC8</color>
+    <color name="color_light_green">#8BC34A</color>
+    <color name="color_light_green_dark">#689F38</color>
+
+    <!-- Lime Colors -->
+    <color name="color_lime_light">#F0F4C3</color>
+    <color name="color_lime">#CDDC39</color>
+    <color name="color_lime_dark">#AFB42B</color>
+
+    <!-- Yellow Colors -->
+    <color name="color_yellow_light">#FFF9C4</color>
+    <color name="color_yellow">#FFEB3B</color>
+    <color name="color_yellow_dark">#FBC02D</color>
+
+    <!-- Amber Colors -->
+    <color name="color_amber_light">#FFECB3</color>
+    <color name="color_amber">#FFC107</color>
+    <color name="color_amber_dark">#FFA000</color>
+
+    <!-- Orange Colors -->
+    <color name="color_orange_light">#FFE0B2</color>
+    <color name="color_orange">#FF9800</color>
+    <color name="color_orange_dark">#F57C00</color>
+
+    <!-- Deep Orange Colors -->
+    <color name="color_deep_orange_light">#FFCCBC</color>
+    <color name="color_deep_orange">#FF5722</color>
+    <color name="color_deep_orange_dark">#E64A19</color>
+
+    <!-- Brown Colors -->
+    <color name="color_brown_light">#D7CCC8</color>
+    <color name="color_brown">#795548</color>
+    <color name="color_brown_dark">#5D4037</color>
+
+    <!-- Grey Colors -->
+    <color name="color_grey_light">#F5F5F5</color>
+    <color name="color_grey">#9E9E9E</color>
+    <color name="color_grey_dark">#616161</color>
+
+    <!-- Blue Grey Colors -->
+    <color name="color_blue_grey_light">#CFD8DC</color>
+    <color name="color_blue_grey">#607D8B</color>
+    <color name="color_blue_grey_dark">#455A64</color>
+
 </resources>

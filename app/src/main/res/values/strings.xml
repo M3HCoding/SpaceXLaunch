@@ -1,6 +1,21 @@
 <resources>
     <string name="app_name">SpaceXLaunch</string>
     <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="title_search">Search</string>
+    <string name="title_store">Store</string>
+
+    <string name="title_detailed_information">Detailed Information</string>
+
+    <string name="content_description"></string>
+
+    <string name="no_internet_connection">No internet connection available, Please try again later\n</string>
+    <string name="are_you_sure_you_want_to_exit">Are you sure you want to exit?</string>
+    <string name="Select_font_size">Select Font Size</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">OK</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="send">Send</string>
+    <string name="submit">Submit</string>
+
 </resources>

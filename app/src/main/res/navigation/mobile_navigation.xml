@@ -9,17 +9,27 @@
         android:id="@+id/navigation_home"
         android:name="com.spacexlaunch.android.ui.home.HomeFragment"
         android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_navigation_home_to_action_home_to_DetailInformationFragment"
+            app:destination="@id/action_home_to_DetailInformationFragment" />
+    </fragment>
 
     <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="com.spacexlaunch.android.ui.dashboard.DashboardFragment"
-        android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
+        android:id="@+id/navigation_search"
+        android:name="com.spacexlaunch.android.ui.search.SearchFragment"
+        android:label="@string/title_search"
+        tools:layout="@layout/fragment_search" />
 
     <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="com.spacexlaunch.android.ui.notifications.NotificationsFragment"
-        android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+        android:id="@+id/navigation_store"
+        android:name="com.spacexlaunch.android.ui.store.StoreFragment"
+        android:label="@string/title_store"
+        tools:layout="@layout/fragment_store" />
+
+    <fragment
+        android:id="@+id/action_home_to_DetailInformationFragment"
+        android:name="com.spacexlaunch.android.ui.detail.DetailedInformationFragment"
+        android:label="@string/title_detailed_information"
+        tools:layout="@layout/fragment_detailed_information" />
 </navigation>
